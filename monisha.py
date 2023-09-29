@@ -1,6 +1,10 @@
 from tkinter import*
 from tkinter import messagebox
-
+import mysql.connector
+conn=mysql.connector.connect(host="localhost",user="root",password="Gayathri###333",database="python_db")
+cursor=conn.cursor()
+cursor.execute()
+print("connection established")
 m=Tk()
 m.geometry("800x800")
 m.config(background='#ff99bb')
